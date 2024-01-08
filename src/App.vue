@@ -16,7 +16,6 @@ export default {
 
 <template lang="">
   <div>
-    <h1>PROVAAAA</h1>
     <AppHeader />
   </div>
 </template>
