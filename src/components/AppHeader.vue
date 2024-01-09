@@ -83,7 +83,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .container {
-    height: 130px;
+    height: 80px;
     font-size: $min_text;
     width: 1200px;
     margin: 20px auto;
@@ -102,7 +102,7 @@ export default {
         &.active {
             color: $light_blue;
             border-bottom: 4px solid $light_blue;
-            padding-bottom: 20px;
+            padding-bottom: 44px;
         }
     }
 
