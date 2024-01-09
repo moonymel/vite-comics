@@ -13,6 +13,9 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/generals.scss' as *;
+@use '../styles/partials/variables' as *;
+
 .main {
     background-color: black;
 

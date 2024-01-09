@@ -9,8 +9,8 @@ export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter,
     AppBlueLine,
+    AppFooter,
 
   }
 }
@@ -28,11 +28,4 @@ export default {
 <style lang="scss">
 @use './styles/partials/variables' as *;
 @use './styles/generals.scss' as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-
-h1 {
-  font-family: Oswald;
-}
 </style>
