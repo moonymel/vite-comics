@@ -94,6 +94,9 @@ export default {
         <div class="m-container">
              <AppCards v-for="comic, index in comics" :key="index" :comic="comic" />
         </div>
+        <div class="load">
+            <button>load more</button>
+        </div>
     </div>
 </template>
 
@@ -102,7 +105,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .main {
-    background-color: black;
+    background-color: $dark_grey;
 
     .m-container {
         width: 1200px;
@@ -112,7 +115,15 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
 
+    }
 
+    .load {
+        text-align: center;
+        padding: 20px 0;
+
+        button {
+            @include small_button
+        }
     }
 }
 </style>
