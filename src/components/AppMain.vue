@@ -1,5 +1,13 @@
 <script>
+
+import AppCards from './AppCards.vue';
+
+
 export default {
+    components: {
+        AppCards,
+    },
+
     data() {
         return {
             comics: [
@@ -84,10 +92,7 @@ export default {
 <template lang="">
     <div class="main">
         <div class="m-container">
-             <div class="film-card" v-for="comic, index in comics" :key="index">
-                <img :src="comic.thumb">
-                <h3>{{ comic.series }}</h3>
-             </div>
+             <AppCards v-for="comic, index in comics" :key="index" :comic="comic" />
         </div>
     </div>
 </template>
@@ -107,22 +112,7 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
 
-        .film-card {
-            width: calc(100% / 6 - 40px);
-            margin: 20px 20px;
 
-            img {
-                max-width: 100%;
-                aspect-ratio: 1 / 1;
-                object-fit: cover;
-                object-position: 50% 0%;
-                margin-bottom: 10px;
-            }
-
-            h3 {
-                @include white_title
-            }
-        }
     }
 }
 </style>
